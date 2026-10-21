@@ -1,0 +1,22 @@
+# Back-end
+backend/node_modules/
+backend/dist/
+backend/coverage/
+backend/src/generated/
+
+# Front-end
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+*.tsbuildinfo
+
+# Ferramentas e sistema
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Segredos locais — nunca versione tokens ou senhas
+.env
+.env.*
+!.env.exemplo

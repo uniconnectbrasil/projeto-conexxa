@@ -1,0 +1,6 @@
+# modulos/materiais/internal
+
+Tudo o que é privado do módulo **Materiais**: controllers, serviços, DTOs e testes de aceitação.
+
+- Outros módulos não podem importar nada daqui (o lint e o teste de arquitetura conferem).
+- O que outro módulo precisar é exportado em `../index.ts`.

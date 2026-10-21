@@ -1,0 +1,16 @@
+// Esquema do banco do Connexa (Prisma).
+//
+// Um schema do PostgreSQL por módulo: cada módulo é dono dos seus dados.
+// Todo model e enum declara @@schema("<modulo>") — o teste de arquitetura confere.
+// O esquema muda SOMENTE por migração (prisma/migrations/). Convenções em prisma/LEIA-ME.md.
+
+generator client {
+  provider     = "prisma-client"
+  output       = "../src/generated/prisma"
+  moduleFormat = "esm"
+}
+
+datasource db {
+  provider = "postgresql"
+  schemas  = ["identidade", "perfil", "grupos", "encontros", "acompanhamento", "painel", "materiais"]
+}

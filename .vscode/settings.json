@@ -1,0 +1,11 @@
+{
+  "eslint.workingDirectories": ["backend", "frontend"],
+  "typescript.tsdk": "backend/node_modules/typescript/lib",
+  "editor.formatOnSave": false,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "chat.tools.autoApprove": false
+}
